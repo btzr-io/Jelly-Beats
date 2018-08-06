@@ -5416,9 +5416,9 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-mediasource@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/mediasource/-/mediasource-2.2.1.tgz#763e706d756f6de0a93d8e824aeab6e90854346c"
+mediasource@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/mediasource/-/mediasource-2.2.2.tgz#2fe826f14e51da97fa4bf87be7b808a0b11d3a4c"
   dependencies:
     inherits "^2.0.1"
     readable-stream "^2.0.5"
