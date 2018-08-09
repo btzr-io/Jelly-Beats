@@ -35,7 +35,7 @@
     "node-vibrant": "^3.0.0",
     "rc-slider": "^8.6.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "universal-router": "^6.0.0",
