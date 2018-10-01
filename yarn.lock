@@ -1031,9 +1031,9 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
-asar@^0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/asar/-/asar-0.14.3.tgz#c72a81542a48e3bca459fb1b07ee2b6adfae265d"
+asar@^0.14.4:
+  version "0.14.4"
+  resolved "https://registry.yarnpkg.com/asar/-/asar-0.14.4.tgz#1dcde809d1d91b064e9874a29be75afdd5a94e00"
   dependencies:
     chromium-pickle-js "^0.2.0"
     commander "^2.9.0"
