@@ -10,7 +10,7 @@ mapUnistoreToProps = (state) => ({
 });
 
 export default connect(
-  'player, cache, downloads',
+  mapUnistoreToProps,
   {
     togglePlay: 'triggerTogglePlay',
     updateStreamInfo: 'updateStreamInfo',
