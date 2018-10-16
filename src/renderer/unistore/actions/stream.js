@@ -1,5 +1,5 @@
 import Lbry from '@/utils/lbry'
-import { selectCalimByUri } from '@/unistore/selectors/cache'
+import { selectCalimByUri } from '@/unistore/selectors'
 
 const DOWNLOAD_TIMEOUT = 20
 const DOWNLOAD_POLL_INTERVAL = 250
