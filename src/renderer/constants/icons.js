@@ -14,9 +14,11 @@ import {
   mdiDotsVertical,
   mdiHome,
   mdiLoading,
+  mdiChevronDown,
 } from '@mdi/js'
 
 export const HOME = mdiHome
+export const DOWN = mdiChevronDown
 export const LEFT = mdiChevronLeft
 export const RIGHT = mdiChevronRight
 export const HEART = mdiHeart

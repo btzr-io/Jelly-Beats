@@ -8,6 +8,7 @@
 @import url('./component/loader.css');
 @import url('./component/header.css');
 @import url('./component/button.css');
+@import url('./component/dropdown.css');
 @import url('./component/sidebar.css');
 @import url('./component/track-list.css');
 @import url('./component/empty-state.css');
