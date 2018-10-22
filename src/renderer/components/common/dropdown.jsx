@@ -11,7 +11,7 @@ class Dropdown extends React.PureComponent {
     submenuStates: {},
   }
 
-  toggleList = () =>
+  toggleList = _ =>
     this.setState(prevState => {
       const { submenuStates } = this.state
       // close the opened submenus
@@ -44,6 +44,14 @@ class Dropdown extends React.PureComponent {
 
   hasSubitems = dropdown => dropdown.subitems
 
+  handleMenuClick = dropdownItem => {
+    if (this.hasSubitems(dropdownItem)) {
+      return this.toggleSubmenu(dropdownItem.key)
+    }
+    dropdownItem.action()
+    this.closeIfOpen()
+  }
+
   render() {
     const { dropdownItems, header } = this.props
     const { open, submenuStates } = this.state
@@ -65,11 +73,7 @@ class Dropdown extends React.PureComponent {
                     <li key={dropdownItem.key}>
                       <div
                         className="title"
-                        onClick={() =>
-                          this.hasSubitems(dropdownItem)
-                            ? this.toggleSubmenu(dropdownItem.key)
-                            : dropdownItem.action()
-                        }
+                        onClick={() => this.handleMenuClick(dropdownItem)}
                       >
                         <a>{dropdownItem.title}</a>
                         {this.hasSubitems(dropdownItem) && (
@@ -78,7 +82,10 @@ class Dropdown extends React.PureComponent {
                       </div>
                       {this.hasSubitems(dropdownItem) &&
                         (submenuStates[dropdownItem.key] && (
-                          <DropdownSubmenuList items={dropdownItem.subitems} />
+                          <DropdownSubmenuList
+                            items={dropdownItem.subitems}
+                            close={this.closeIfOpen}
+                          />
                         ))}
                     </li>
                   ))}
