@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 export default class ClickOutsideDetect extends Component {
   constructor(props) {
     super(props)
+    this.wrapperRef = React.createRef()
   }
 
   componentDidMount = _ =>
@@ -17,20 +18,19 @@ export default class ClickOutsideDetect extends Component {
     document.removeEventListener('mousedown', this.handleClickOutsideComponent)
 
   /**
-   * Set the wrapper ref
-   */
-  setWrapperRef = node => (this.wrapperRef = node)
-
-  /**
    * Alert if clicked on outside of element
    */
   handleClickOutsideComponent = event => {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+    if (!this.wrapperRef || !this.wrapperRef.current) {
+      return
+    }
+
+    if (!this.wrapperRef.current.contains(event.target)) {
       this.props.handleClickOutside()
     }
   }
 
-  render = _ => <div ref={this.setWrapperRef}>{this.props.children}</div>
+  render = _ => <div ref={this.wrapperRef}>{this.props.children}</div>
 }
 
 ClickOutsideDetect.propTypes = {
