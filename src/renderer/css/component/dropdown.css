@@ -22,7 +22,7 @@
 
 .dropdown ul li {
   display: inline-block;
-  background: #000000;
+  background: var(--dropdown-bg-color);
   width: 100%;
 }
 

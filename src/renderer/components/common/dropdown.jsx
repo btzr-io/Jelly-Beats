@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import Icon from '@mdi/react'
-import * as icons from '@/constants/icons'
 import ClickOutsideDetect from './ClickOutsideDetect'
+import { DOWN as down, LEFT as left, RIGHT as right } from '@/constants/icons'
+import DropdownSubmenuList from './dropdownSubmenuList'
 
 class Dropdown extends React.PureComponent {
   state = {
@@ -54,7 +55,7 @@ class Dropdown extends React.PureComponent {
               <div className="title" onClick={this.toggleList}>
                 <a>{header}</a>
                 <Icon
-                  path={open ? icons.LEFT : icons.DOWN}
+                  path={open ? left : down}
                   className=" icon dropdown-icon link__icon"
                 />
               </div>
@@ -72,24 +73,13 @@ class Dropdown extends React.PureComponent {
                       >
                         <a>{dropdownItem.title}</a>
                         {this.hasSubitems(dropdownItem) && (
-                          <Icon
-                            path={icons.RIGHT}
-                            className="icon dropdown-icon link__icon"
-                          />
+                          <Icon path={right} className="icon dropdown-icon link__icon" />
                         )}
                       </div>
-                      {this.hasSubitems(dropdownItem) && (
-                        <ul>
-                          {submenuStates[dropdownItem.key] &&
-                            dropdownItem.subitems.map(subitem => (
-                              <li key={subitem.key} onClick={subitem.action}>
-                                <div className="title">
-                                  <a>{subitem.title}</a>
-                                </div>
-                              </li>
-                            ))}
-                        </ul>
-                      )}
+                      {this.hasSubitems(dropdownItem) &&
+                        (submenuStates[dropdownItem.key] && (
+                          <DropdownSubmenuList items={dropdownItem.subitems} />
+                        ))}
                     </li>
                   ))}
                 </ul>
