@@ -4,7 +4,6 @@
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
   width: 120px;
   background-color: #555;
   color: #fff;
@@ -14,17 +13,30 @@
 
   position: absolute;
   z-index: 1;
+
   bottom: 125%;
   left: 50%;
+
   margin-left: -60px;
 
-  opacity: 0;
   display: none;
-  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext--rigth {
+  bottom: 0;
+  left: 250%;
+}
+
+.tooltip .tooltiptext--left {
+  bottom: 0;
+  left: -150%;
+}
+
+.tooltip .tooltiptext--bottom {
+  left: 50%;
 }
 
 .tooltip .tooltiptext::after {
-  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -34,12 +46,10 @@
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip .tooltiptext::disabled {
+.tooltip .tooltiptext:disabled {
   display: none;
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
   display: block;
 }

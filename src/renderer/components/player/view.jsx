@@ -14,9 +14,9 @@ const formatTime = (seconds = 0) => moment.utc(seconds * 1000).format('mm:ss')
 import '@/css/slider.css'
 import css from '@/css/modules/player.css.module'
 
-const ControlButton = ({ icon, action, size, disabled, tip }) => {
+const ControlButton = ({ icon, action, size, disabled, title }) => {
   return (
-    <Tooltip tip={tip}>
+    <Tooltip title={title}>
       <button className={css.button} onClick={action} disabled={disabled}>
         <Icon path={icon} className={`icon icon--${size || 'large'}`} />
       </button>
@@ -235,20 +235,20 @@ class Player extends React.PureComponent {
         icon: icons.SKIP_PREVIOUS,
         action: () => {},
         disabled: true,
-        tip: 'Skip',
+        title: 'Skip',
       },
       {
         size: 'large-x',
         icon: paused ? icons.PLAY : icons.PAUSE,
         action: () => togglePlay(),
         disabled: !ready,
-        tip: 'Play',
+        title: 'Play',
       },
       {
         icon: icons.SKIP_NEXT,
         action: () => {},
         disabled: true,
-        tip: 'Next',
+        title: 'Next',
       },
     ]
 
@@ -257,19 +257,19 @@ class Player extends React.PureComponent {
         icon: icons.SHUFFLE,
         action: () => {},
         disabled: true,
-        tip: 'Shuffle',
+        title: 'Shuffle',
       },
       {
         icon: icons.REPEAT,
         action: () => {},
         disabled: true,
-        tip: 'Repeat',
+        title: 'Repeat',
       },
       {
         icon: icons.HEART_OUTLINE,
         action: () => {},
         disabled: true,
-        tip: 'Favorite',
+        title: 'Favorite',
       },
     ]
 

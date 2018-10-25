@@ -2,12 +2,12 @@ import React, { PureComponent } from 'react'
 
 class Tooltip extends PureComponent {
   render() {
-    const { children, tip, name } = this.props
+    const { children, title, name } = this.props
     return (
       <div class="tooltip">
-        <span>{children}</span>
+        {children}
         <span id={name} class="tooltiptext">
-          {tip}
+          {title}
         </span>
       </div>
     )
