@@ -737,10 +737,10 @@
   resolved "https://registry.yarnpkg.com/@mdi/js/-/js-3.0.39.tgz#ef12d603d6ee7c34fad6d08c37dfc0376944b269"
   integrity sha512-GGsJowaILwU+RrAEuOCdh2WOmVXmNYuhNECotKxDyUR2L4+0w2JaYhy8lRJzHBkjejpA+kk/xJLzlDA+gNOGKg==
 
-"@mdi/react@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@mdi/react/-/react-1.0.1.tgz#abad5797862df94eac853b33b3d80c1fa2ea35d8"
-  integrity sha512-R9Ajc4fI758+WOwtPOM4Mv+rgDgdtcBvsGm/9xEh820jk5NKbZGNNwYI15KOqR0tB3FkvW1f2uWEd1N5keZVUA==
+"@mdi/react@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@mdi/react/-/react-1.1.0.tgz#22b014e40152adbe0d7d36631fc9979854603c7a"
+  integrity sha512-c0+avMYEZ6i7Pg1ULLFs+p7k8bDPiie9rrgGYs8VWQhw2tUUYz7r0lIPVzD3bzMghWfyhfkArj88K5Of0WTMNw==
 
 "@posthtml/esm@^1.0.0":
   version "1.0.0"
