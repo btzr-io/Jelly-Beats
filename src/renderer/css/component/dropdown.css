@@ -1,32 +1,33 @@
-.dropdown ul {
+.dropdown-list {
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
   width: 170px;
+  background: var(--dropdown-bg-color);
 }
 
-.dropdown .title {
+.dropdown-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.dropdown .title:hover {
+.dropdown-title:hover {
   cursor: pointer;
 }
 
-.dropdown .title a:hover {
+.dropdown-title a:hover {
   opacity: 1;
 }
 
-.dropdown ul li {
+.dropdown-line {
   display: inline-block;
   background: var(--dropdown-bg-color);
   width: 100%;
 }
 
-.dropdown a {
+.dropdown-button {
   display: block;
   padding: 0 10px;
   color: var(--text-color);
@@ -37,14 +38,15 @@
   opacity: 0.64;
 }
 
-.dropdown ul ul {
+.dropdown-sublist {
   display: inherit;
   position: absolute;
-  top: 60px; /* the height of the main nav */
+  left: 170px;
+  top: 0;
 }
 
 /* Fisrt Tier Dropdown */
-.dropdown ul ul li {
+.dropdown-sublist-line {
   width: 170px;
   float: none;
   display: list-item;
@@ -52,10 +54,8 @@
 }
 
 /* Second, Third and more Tiers	*/
-.dropdown ul ul ul li {
+.dropdown-sub-line {
   position: relative;
-  top: -60px;
-  left: 170px;
 }
 
 .dropdown-icon {

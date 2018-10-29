@@ -1,19 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import DropdownSubmenu from './dropdownSubmenu'
+import DropdownTitle from './DropdownTitle'
 
 const handleSubmenuClick = (subitem, close) => {
   subitem.action()
   close()
 }
 const DropdownSubmenuList = ({ items, close }) => (
-  <ul>
+  <ul className="dropdown-list dropdown-submenu-list dropdown-sublist">
     {items.map(subitem => (
-      <DropdownSubmenu
-        key={subitem.key}
-        title={subitem.title}
-        action={() => handleSubmenuClick(subitem, close)}
-      />
+      <li className="dropdown-line  dropdown-sub-line" key={subitem.key}>
+        <DropdownTitle
+          text={subitem.title}
+          onClick={() => handleSubmenuClick(subitem, close)}
+        />
+      </li>
     ))}
   </ul>
 )
