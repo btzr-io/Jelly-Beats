@@ -6,7 +6,6 @@ import {
   PLAYLIST_PLUS as playlistPlus,
   HEART_OUTLINE as heart,
 } from '@/constants/icons'
-import Dropdown from '../common/dropdown'
 
 const NavLink = ({ icon, label, active, action, badge }) => (
   <div
@@ -43,35 +42,6 @@ class SideBar extends React.PureComponent {
   }
 
   render() {
-    const menu = [
-      {
-        key: 1,
-        title: 'Submenu',
-        subitems: [
-          {
-            key: 12,
-            title: 'teste',
-            action: () => console.log('Submenu item 12 clicked'),
-          },
-          {
-            key: 13,
-            title: 'teste 2',
-            action: () => console.log('Submenu item 13 clicked'),
-          },
-        ],
-      },
-      {
-        key: 2,
-        title: 'Submenu 2',
-        action: () => console.log('Submenu 2 clicked'),
-      },
-      {
-        key: 3,
-        title: 'Submenu 3',
-        action: () => console.log('Submenu 3 clicked'),
-      },
-    ]
-
     const navLinks = [
       {
         label: 'Home',
@@ -94,7 +64,6 @@ class SideBar extends React.PureComponent {
         <div className="nav__links">
           {navLinks.map((item, idx) => this.getNavLink({ ...item, idx }))}
         </div>
-        <Dropdown header="Menu" dropdownItems={menu} />
       </div>
     )
   }
