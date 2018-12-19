@@ -34,7 +34,7 @@
     "classnames": "^2.2.6",
     "history": "^4.7.2",
     "lbry-redux": "https://github.com/lbryio/lbry-redux/",
-    "mediasource": "^2.2.1",
+    "mediasource": "^2.3.0",
     "moment": "^2.22.2",
     "proxy-polyfill": "^0.3.0",
     "rc-slider": "^8.6.4",
