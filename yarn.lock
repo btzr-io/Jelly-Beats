@@ -7960,10 +7960,10 @@ unique-string@^1.0.0:
   dependencies:
     crypto-random-string "^1.0.0"
 
-unistore@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/unistore/-/unistore-3.1.0.tgz#38ba40ba43e6d0cb89e842b6216469736c93dd34"
-  integrity sha512-odZJeaB7ZDu8pDLOIhUeB5ttcPL6ANtPCua/+rdO31XL++03/zfw6WoQz/tuyqzRhZezCEHT97aV0GJx4dvl6g==
+unistore@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/unistore/-/unistore-3.1.1.tgz#214bac4a2510dba56910897c7dd58a63091a9897"
+  integrity sha512-AtGY2ONlWFL7xP1Z5bQgwlNwVGxiThK+rtiHtNcEiHMy6+O9pX80GV+Z/rB6ImmiFPU9jpdT7ulxPmnD0Yil1A==
 
 universal-router@^7.0.0:
   version "7.0.0"
