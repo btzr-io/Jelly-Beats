@@ -896,9 +896,9 @@ ajv@^6.1.0, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-all-contributors-cli@^5.6.1:
-  version "5.6.1"
-  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-5.6.1.tgz#18de0c355fe393da19dd2d265f0d2adf2d0bc04b"
+all-contributors-cli@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-5.8.0.tgz#7ebf4c0a548834fd61b0f7e238d12e142ebcac0c"
   dependencies:
     async "^2.0.0-rc.1"
     chalk "^2.3.0"
