@@ -40,7 +40,7 @@
     "rc-slider": "^8.6.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "source-map-support": "^0.5.9",
+    "source-map-support": "^0.5.10",
     "stockroom": "^1.0.1",
     "unistore": "^3.2.1",
     "universal-router": "^7.0.0",
