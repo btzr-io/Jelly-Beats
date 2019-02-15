@@ -42,7 +42,7 @@
     "proxy-polyfill": "^0.3.0",
     "rc-slider": "^8.6.5",
     "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react-dom": "^16.8.2",
     "react-switch": "^4.0.1",
     "source-map-support": "^0.5.9",
     "stockroom": "^1.0.1",
