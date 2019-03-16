@@ -10,6 +10,7 @@ import Podcasts from './views/podcasts'
 import Playlist from './views/playlist'
 import Playlists from './views/playlists'
 import Search from './views/search'
+import Help from './views/help'
 
 const routes = [
   {
@@ -51,6 +52,11 @@ const routes = [
   {
     path: '/search',
     action: ctx => <Search options={ctx} />,
+  },
+  
+  {
+    path: '/help',
+    action: ctx => <Help options={ctx} />,
   },
 ]
 
